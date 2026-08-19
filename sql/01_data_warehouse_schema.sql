@@ -321,7 +321,7 @@ JOIN dbo.DimDate d
 SELECT COUNT(*) AS BadDateFK
 FROM dbo.FactBooking f
 LEFT JOIN dbo.DimDate d ON f.Date_ID = d.Date_ID
-WHERE d.Date_ID IS NULL;
+WHERE d.Date_IDÂ ISÂ NULL;
 
 
 SELECT h.hotel_type,
@@ -329,7 +329,7 @@ SELECT h.hotel_type,
 FROM dbo.FactBooking f
 JOIN dbo.DimHotel h ON f.Hotel_ID = h.Hotel_ID
 GROUP BY h.hotel_type
-ORDER BY TotalRevenue DESC;
+ORDER BY TotalRevenueÂ DESC;
 
 
 ---------------------------------------
