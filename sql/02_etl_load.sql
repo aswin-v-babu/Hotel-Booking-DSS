@@ -41,7 +41,7 @@ DELETE FROM dbo.DimRoom;
 DELETE FROM dbo.DimMarketSegment;
 DELETE FROM dbo.DimGuest;
 DELETE FROM dbo.DimHotel;
-DELETE FROM dbo.DimDate;
+DELETE FROMÂ dbo.DimDate;
 GO
 
 
@@ -54,7 +54,7 @@ DBCC CHECKIDENT ('dbo.DimRoom', RESEED, 0);
 DBCC CHECKIDENT ('dbo.DimMarketSegment', RESEED, 0);
 DBCC CHECKIDENT ('dbo.DimGuest', RESEED, 0);
 DBCC CHECKIDENT ('dbo.DimHotel', RESEED, 0);
-DBCC CHECKIDENT ('dbo.DimDate', RESEED, 0);
+DBCC CHECKIDENT ('dbo.DimDate',Â RESEED,Â 0);
 
 
 
